@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C5581CDD-264B-E84C-41EB-C9DC648B78DD" name="NL_m2m">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 18:36:53 UTC</createdTime>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<engineerTo>
+<item key="981CB502-0EF9-4365-4FFA-07B56ACB6D1B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="mem_mem" id="125C43DD-0073-3A45-1F29-A29C1AF71FB2">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 18:37:01 UTC</createdTime>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<engineerTo>
+<item key="981CB502-0EF9-4365-4FFA-07B56ACB6D1B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="member_id" id="C40ECF7B-9D45-F928-5905-444F304BB52E">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 18:37:24 UTC</createdTime>
+<generatorID>18136BDD-81D0-3B16-E1F1-E6E53284DF96</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<engineerTo>
+<item key="981CB502-0EF9-4365-4FFA-07B56ACB6D1B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B0AE21C4-A6DE-B545-0AA8-46F77A339C41</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="member_id1" id="BE85DE73-08FA-D35E-F2FA-B284D5AC631C">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 18:37:43 UTC</createdTime>
+<generatorID>4D5C2F6B-23BC-73FF-DA8B-255EE8954151</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<engineerTo>
+<item key="981CB502-0EF9-4365-4FFA-07B56ACB6D1B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B0AE21C4-A6DE-B545-0AA8-46F77A339C41</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A1C4FC34-E40E-037A-E348-36B4E6AFD150" name="{entity} PK">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 18:37:07 UTC</createdTime>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<engineerTo>
+<item key="981CB502-0EF9-4365-4FFA-07B56ACB6D1B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>125C43DD-0073-3A45-1F29-A29C1AF71FB2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

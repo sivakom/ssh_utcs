@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="397548E0-458A-4D64-3096-A75F099D4831" name="NL_Member">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 19:04:25 UTC</createdTime>
+<generatorID>CA280220-CC02-0A63-63B3-C34E742EF4D5</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="member_id" id="06E6909D-3B10-6A79-B228-EBE494ADD68B">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 19:04:25 UTC</createdTime>
+<generatorID>B0AE21C4-A6DE-B545-0AA8-46F77A339C41</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="5C71D985-1089-780D-BF67-3B5C8C60E6FD">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 19:04:25 UTC</createdTime>
+<generatorID>DC300BFE-8812-80D3-6AE9-6A65C166E900</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="2194A773-8F24-538B-3880-1F50E6933750">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 19:04:25 UTC</createdTime>
+<generatorID>40938463-AC36-BC88-E6F5-E9A919DE200F</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="E645C1B7-D56E-DB4F-589D-F90EA8B4D46F">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 19:04:25 UTC</createdTime>
+<generatorID>58A20CC0-9DAF-E75E-8FEC-D4BEA2AB2B17</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="B5B1BE5A-2DD0-7B3E-0A73-22A2A712E5B6">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 19:04:25 UTC</createdTime>
+<generatorID>7AD8BD1D-46CB-5694-1271-5E5E0964823B</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ownership_division_code" id="7D1B57AE-A5CA-D22A-6AA4-7C19836DBA92">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 19:04:25 UTC</createdTime>
+<generatorID>98926051-BA51-2F91-69BA-401521EDDB48</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="external_view_name" id="43DCF002-E8F1-6588-81D6-238A7066FA62">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 19:04:25 UTC</createdTime>
+<generatorID>AC191C6F-BD57-E174-EAB8-141604A94FDF</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_effective_date" id="B32A7F08-1159-6E71-1385-070D5C14C356">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 19:04:25 UTC</createdTime>
+<generatorID>1D38DFC3-3811-091F-A3D3-7F7752B38BFF</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2A41AD3B-E97A-D417-ECB4-F03D0565B9B7" name="NL_Member_PK">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 19:04:25 UTC</createdTime>
+<generatorID>78E68199-FFF7-2C70-4B99-DC8E492AD0F3</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="06E6909D-3B10-6A79-B228-EBE494ADD68B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

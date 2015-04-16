@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0F67BCE1-1AB8-45EF-1EBB-4C612414C806" name="NL_User">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 18:00:21 UTC</createdTime>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<engineerTo>
+<item key="981CB502-0EF9-4365-4FFA-07B56ACB6D1B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="user_id" id="60BC2542-1B88-9ED4-C830-3D3D1D92E209">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 18:00:21 UTC</createdTime>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<importedID>7027FD70-475E-FDDA-3AF4-003B2B825FED</importedID>
+<engineerTo>
+<item key="981CB502-0EF9-4365-4FFA-07B56ACB6D1B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="type" id="25F6FB53-E979-2575-DBF5-AA5C99FEE839">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 18:00:47 UTC</createdTime>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<engineerTo>
+<item key="981CB502-0EF9-4365-4FFA-07B56ACB6D1B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A58ECE03-96FE-8E34-0787-CCA7C1B76B16" name="{entity} PK">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 18:00:21 UTC</createdTime>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<engineerTo>
+<item key="981CB502-0EF9-4365-4FFA-07B56ACB6D1B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>60BC2542-1B88-9ED4-C830-3D3D1D92E209</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

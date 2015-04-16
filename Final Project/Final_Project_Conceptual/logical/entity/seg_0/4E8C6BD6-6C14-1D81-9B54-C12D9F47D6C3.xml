@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4E8C6BD6-6C14-1D81-9B54-C12D9F47D6C3" name="NL_Document">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 13:16:04 UTC</createdTime>
+<ownerDesignName>Final_Project_Conceptual</ownerDesignName>
+<engineerTo>
+<item key="65CDB178-DD2F-47E9-904D-1DE327CB2D6C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="document_id" id="62F96AA7-198E-3792-5802-D33717E4325E">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 13:16:16 UTC</createdTime>
+<ownerDesignName>Final_Project_Conceptual</ownerDesignName>
+<engineerTo>
+<item key="65CDB178-DD2F-47E9-904D-1DE327CB2D6C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="filename" id="A740E2ED-5D04-FA0E-8959-7DAE7847AB5A">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 13:16:41 UTC</createdTime>
+<ownerDesignName>Final_Project_Conceptual</ownerDesignName>
+<engineerTo>
+<item key="65CDB178-DD2F-47E9-904D-1DE327CB2D6C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+</Attribute>
+<Attribute name="file_mimetype" id="68A98219-53D2-5367-A809-9B65DAE57E08">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 13:16:55 UTC</createdTime>
+<ownerDesignName>Final_Project_Conceptual</ownerDesignName>
+<engineerTo>
+<item key="65CDB178-DD2F-47E9-904D-1DE327CB2D6C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+</Attribute>
+<Attribute name="file_charset" id="CC5C8CB2-8A23-0D9A-3A24-BD7707D20B6B">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 13:17:07 UTC</createdTime>
+<ownerDesignName>Final_Project_Conceptual</ownerDesignName>
+<engineerTo>
+<item key="65CDB178-DD2F-47E9-904D-1DE327CB2D6C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+</Attribute>
+<Attribute name="file_data" id="E93589C6-8642-5FEE-DBAF-186B71AE5010">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 13:17:26 UTC</createdTime>
+<ownerDesignName>Final_Project_Conceptual</ownerDesignName>
+<engineerTo>
+<item key="65CDB178-DD2F-47E9-904D-1DE327CB2D6C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+</Attribute>
+<Attribute name="file_comments" id="25CB8F31-7AC9-3B15-E32F-41F1965B3764">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 13:17:33 UTC</createdTime>
+<ownerDesignName>Final_Project_Conceptual</ownerDesignName>
+<engineerTo>
+<item key="65CDB178-DD2F-47E9-904D-1DE327CB2D6C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+</Attribute>
+<Attribute name="tags" id="895E406F-2260-2062-BE8F-A1ABA4AA8A95">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 13:17:49 UTC</createdTime>
+<ownerDesignName>Final_Project_Conceptual</ownerDesignName>
+<engineerTo>
+<item key="65CDB178-DD2F-47E9-904D-1DE327CB2D6C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+</Attribute>
+<Attribute name="member_id" id="0FA7A4E5-BAA8-9D17-EEDE-124F0B7BB12C">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 13:18:29 UTC</createdTime>
+<generatorID>D8C4ABBC-F70F-F9BD-3DE3-13408A12ECF5</generatorID>
+<ownerDesignName>Final_Project_Conceptual</ownerDesignName>
+<engineerTo>
+<item key="65CDB178-DD2F-47E9-904D-1DE327CB2D6C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B69E0A99-0A58-68F0-6C01-405754C389FE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+</Entity>

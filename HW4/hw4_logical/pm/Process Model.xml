@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="322C0EE8-9610-9DAD-06D3-9739C9C6DD15">
+<createdBy>Siva</createdBy>
+<createdTime>2015-02-13 19:53:27 UTC</createdTime>
+<ownerDesignName>hw4_logical</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

@@ -1,0 +1,113 @@
+drop view nl_user_emp ;
+drop view nl_user_admin ;
+drop view nl_member_emp;
+drop view nl_member_notice_list;
+
+create view nl_user_emp as
+SELECT 
+    USER_ID,
+    TYPE
+FROM nl_user where type = 'User' ;
+
+create or replace TRIGGER nl_user_trigger
+     INSTEAD OF insert ON nl_user_emp
+     FOR EACH ROW
+BEGIN
+    insert into nl_user( 
+    USER_ID,
+    TYPE)
+     VALUES ( 
+    :NEW.USER_ID,
+    'User') ;
+END;
+/
+
+create view nl_user_admin as
+SELECT 
+    USER_ID,
+    TYPE
+FROM nl_user where type = 'Administrator' ;
+
+create or replace TRIGGER nl_user_admin_trigger
+     INSTEAD OF insert ON nl_user_admin
+     FOR EACH ROW
+BEGIN
+    insert into nl_user( 
+    USER_ID,
+    TYPE)
+     VALUES ( 
+    :NEW.USER_ID,
+    'Administrator') ;
+END;
+/
+
+create view nl_member_emp as
+SELECT 
+    MEMBER_ID,
+    TYPE,
+    STATUS,
+    NAME,
+    DESCRIPTION,
+    OWNERSHIP_DIVISION_CODE,
+    STATUS_EFFECTIVE_DATE
+FROM nl_member where type = 'Employee' ;
+
+create or replace TRIGGER nl_member_emp_trigger
+     INSTEAD OF insert ON nl_member_emp
+     FOR EACH ROW
+BEGIN
+    insert into nl_member( 
+    MEMBER_ID,
+    TYPE,
+    STATUS,
+    NAME,
+    DESCRIPTION,
+    OWNERSHIP_DIVISION_CODE,
+    STATUS_EFFECTIVE_DATE)
+     VALUES ( 
+    :NEW.MEMBER_ID,
+    'Employee',
+    :NEW.STATUS,
+    :NEW.NAME,
+    :NEW.DESCRIPTION,
+    :NEW.OWNERSHIP_DIVISION_CODE,
+    :NEW.STATUS_EFFECTIVE_DATE) ;
+END;
+/
+
+create view nl_member_notice_list as
+SELECT 
+    MEMBER_ID,
+    TYPE,
+    STATUS,
+    NAME,
+    DESCRIPTION,
+    OWNERSHIP_DIVISION_CODE,
+    EXTERNAL_VIEW_NAME,
+    STATUS_EFFECTIVE_DATE
+FROM nl_member where type = 'Notice List' ;
+
+create or replace TRIGGER nl_member_notice_list_trigger
+     INSTEAD OF insert ON nl_member_notice_list
+     FOR EACH ROW
+BEGIN
+    insert into nl_member( 
+    MEMBER_ID,
+    TYPE,
+    STATUS,
+    NAME,
+    DESCRIPTION,
+    OWNERSHIP_DIVISION_CODE,
+    EXTERNAL_VIEW_NAME,
+    STATUS_EFFECTIVE_DATE)
+     VALUES ( 
+    :NEW.MEMBER_ID,
+    'Notice List',
+    :NEW.STATUS,
+    :NEW.NAME,
+    :NEW.DESCRIPTION,
+    :NEW.OWNERSHIP_DIVISION_CODE,
+    :NEW.EXTERNAL_VIEW_NAME,
+    :NEW.STATUS_EFFECTIVE_DATE) ;
+END;
+/

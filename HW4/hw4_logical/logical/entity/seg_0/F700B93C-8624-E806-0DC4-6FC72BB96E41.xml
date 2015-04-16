@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F700B93C-8624-E806-0DC4-6FC72BB96E41" name="SIM_dept">
+<createdBy>Siva</createdBy>
+<createdTime>2015-02-13 19:54:15 UTC</createdTime>
+<ownerDesignName>hw4_logical</ownerDesignName>
+<engineerTo>
+<item key="281EA280-A7B0-B4F7-1A89-D98876784F95" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="dept_id" id="5738DDBF-4473-7635-850F-B434E2E53E2A">
+<createdBy>Siva</createdBy>
+<createdTime>2015-02-13 19:54:15 UTC</createdTime>
+<ownerDesignName>hw4_logical</ownerDesignName>
+<importedID>60C89DE6-4E7C-86C3-AEAB-F64140FD1E19</importedID>
+<engineerTo>
+<item key="281EA280-A7B0-B4F7-1A89-D98876784F95" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="name" id="870504C0-9107-B025-CAF6-434623BB9BCB">
+<createdBy>Siva</createdBy>
+<createdTime>2015-02-13 19:54:15 UTC</createdTime>
+<ownerDesignName>hw4_logical</ownerDesignName>
+<importedID>8D48E5B8-72B4-0CC8-80EA-B10C809CE235</importedID>
+<engineerTo>
+<item key="281EA280-A7B0-B4F7-1A89-D98876784F95" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="location" id="AD268CFC-6001-8A22-C7B6-5A4362A8202C">
+<createdBy>Siva</createdBy>
+<createdTime>2015-02-13 19:54:15 UTC</createdTime>
+<ownerDesignName>hw4_logical</ownerDesignName>
+<importedID>ED00A150-C9B9-BA15-3FB8-D6DBBF4CBCDE</importedID>
+<engineerTo>
+<item key="281EA280-A7B0-B4F7-1A89-D98876784F95" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="person_id" id="22A114FE-B73E-A33A-0CE8-DEF732CD80E4">
+<createdBy>Siva</createdBy>
+<createdTime>2015-02-13 20:29:06 UTC</createdTime>
+<generatorID>F8E7DF76-AC4F-05FB-3752-D4AA41005493</generatorID>
+<ownerDesignName>hw4_logical</ownerDesignName>
+<engineerTo>
+<item key="281EA280-A7B0-B4F7-1A89-D98876784F95" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>BCBC55AB-2739-4502-47E6-E7CAE7AF2263</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="87635D10-6174-1746-7328-C0DF357BD969" name="{entity} PK">
+<createdBy>Siva</createdBy>
+<createdTime>2015-02-13 19:54:15 UTC</createdTime>
+<ownerDesignName>hw4_logical</ownerDesignName>
+<engineerTo>
+<item key="281EA280-A7B0-B4F7-1A89-D98876784F95" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5738DDBF-4473-7635-850F-B434E2E53E2A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

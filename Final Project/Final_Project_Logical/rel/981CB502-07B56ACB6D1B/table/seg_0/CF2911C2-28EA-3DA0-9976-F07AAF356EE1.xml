@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CF2911C2-28EA-3DA0-9976-F07AAF356EE1" name="NL_m2m">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 19:04:25 UTC</createdTime>
+<generatorID>C5581CDD-264B-E84C-41EB-C9DC648B78DD</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="mem_mem" id="B5CFD4E1-F64F-FE57-5A18-2D7A56FD1D25">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 19:04:25 UTC</createdTime>
+<generatorID>125C43DD-0073-3A45-1F29-A29C1AF71FB2</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NL_Member_member_id" id="08E89627-16D6-F4B2-0103-5AD9F61AE7BE">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 19:04:25 UTC</createdTime>
+<generatorID>C40ECF7B-9D45-F928-5905-444F304BB52E</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>06E6909D-3B10-6A79-B228-EBE494ADD68B</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7F2207EE-9073-A601-9920-9BB98F8B0232" referredColumn="06E6909D-3B10-6A79-B228-EBE494ADD68B"/>
+</associations>
+</Column>
+<Column name="NL_Member_member_id1" id="C2A3165F-62DA-A244-BF04-CE22AB2956BD">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 19:04:25 UTC</createdTime>
+<generatorID>BE85DE73-08FA-D35E-F2FA-B284D5AC631C</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>06E6909D-3B10-6A79-B228-EBE494ADD68B</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A845E66D-9C3D-8099-FE31-048BE1AE51CC" referredColumn="06E6909D-3B10-6A79-B228-EBE494ADD68B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="876E724D-76D8-26B1-F3F6-F3FA9E81C241" name="NL_m2m_PK">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 19:04:25 UTC</createdTime>
+<generatorID>A1C4FC34-E40E-037A-E348-36B4E6AFD150</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5CFD4E1-F64F-FE57-5A18-2D7A56FD1D25"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1E834515-D143-EBAC-04AC-46BEBA4E5E2A" name="NL_m2m_NL_Member_FK">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 19:04:25 UTC</createdTime>
+<generatorID>18136BDD-81D0-3B16-E1F1-E6E53284DF96</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="08E89627-16D6-F4B2-0103-5AD9F61AE7BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="54DDD996-C079-4509-667D-84B70ACDE1B1" name="NL_m2m_NL_Member_FKv1">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-15 19:04:25 UTC</createdTime>
+<generatorID>4D5C2F6B-23BC-73FF-DA8B-255EE8954151</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2A3165F-62DA-A244-BF04-CE22AB2956BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

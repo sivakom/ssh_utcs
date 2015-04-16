@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="27CC78A4-760B-F402-FBE7-7BE2E56E8D95" name="SIM_project" seqName="seg_0"/>
+   <object objectType="Entity" objectID="2AFE67F0-47DD-7AA6-6695-D6488D3A25FE" name="SIM_Person" seqName="seg_0"/>
+   <object objectType="Entity" objectID="7B268F61-AC1B-54C2-300E-4708935F0834" name="SIM_proj_own" seqName="seg_0"/>
+   <object objectType="Entity" objectID="F700B93C-8624-E806-0DC4-6FC72BB96E41" name="SIM_dept" seqName="seg_0"/>
+   <object objectType="Relation" objectID="121310F4-CAAF-4429-C636-389D110FC817" name="r11" seqName="seg_0"/>
+   <object objectType="Relation" objectID="41CCF8FA-8118-F570-1FA3-9B284B6B401C" name="r2" seqName="seg_0"/>
+   <object objectType="Relation" objectID="676145F5-8DC5-ED76-1BBE-E77FC9459325" name="r13" seqName="seg_0"/>
+   <object objectType="Relation" objectID="DD73DC78-A5EE-8656-1D49-9ECE992C7734" name="r10" seqName="seg_0"/>
+   <object objectType="Relation" objectID="F8E7DF76-AC4F-05FB-3752-D4AA41005493" name="r12" seqName="seg_0"/>
+   <object objectType="Note" objectID="9C5C638E-C94C-BB77-AD95-35CFC1D2ADBB" name="Note_1" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>
