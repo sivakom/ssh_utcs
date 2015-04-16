@@ -1,2 +1,2 @@
 # ssh_utcs
-HW4 Submission for Surakij Areenukul, Heng Lam and Siva Mullapudi
+CS347 Repo for Surakij Areenukul, Heng Lam and Siva Mullapudi
