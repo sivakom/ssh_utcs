@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BF7394B2-C588-26FF-CA07-3BBDA0E02A4C" name="NL_Member">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="088CCD5D-F885-5ABC-367C-1BCE829E7340" name="NL_ARL_Provided_Division">
 <createdBy>Siva</createdBy>
-<createdTime>2015-04-15 13:13:01 UTC</createdTime>
+<createdTime>2015-04-22 18:12:08 UTC</createdTime>
 <ownerDesignName>Final_Project_Conceptual</ownerDesignName>
 <engineerTo>
 <item key="65CDB178-DD2F-47E9-904D-1DE327CB2D6C" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="member_id" id="B69E0A99-0A58-68F0-6C01-405754C389FE">
+<Attribute name="division_id" id="ED000950-402B-CA0B-A413-5B3FD90D5EDF">
 <createdBy>Siva</createdBy>
-<createdTime>2015-04-15 13:13:10 UTC</createdTime>
+<createdTime>2015-04-22 18:12:23 UTC</createdTime>
 <ownerDesignName>Final_Project_Conceptual</ownerDesignName>
 <engineerTo>
 <item key="65CDB178-DD2F-47E9-904D-1DE327CB2D6C" value="true"/>
@@ -26,45 +26,32 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
-<Attribute name="type" id="35AB81E4-08AF-04B3-F1AB-0A9671CC72BD">
+<Attribute name="lab_id" id="CE902AA2-7548-DDE9-4B76-F60F39E7469C">
 <createdBy>Siva</createdBy>
-<createdTime>2015-04-15 13:13:24 UTC</createdTime>
+<createdTime>2015-04-22 18:13:19 UTC</createdTime>
+<generatorID>7DEDF294-F70F-E144-2300-E5833C12B395</generatorID>
 <ownerDesignName>Final_Project_Conceptual</ownerDesignName>
 <engineerTo>
 <item key="65CDB178-DD2F-47E9-904D-1DE327CB2D6C" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>255</dataTypeSize>
-</Attribute>
-<Attribute name="user_id" id="8E407F80-AA15-2881-DF8C-D825FCED919A">
-<createdBy>Siva</createdBy>
-<createdTime>2015-04-22 18:09:51 UTC</createdTime>
-<generatorID>D57382F0-24EA-C2DC-D0CC-9C4263A1CE8F</generatorID>
-<ownerDesignName>Final_Project_Conceptual</ownerDesignName>
-<engineerTo>
-<item key="65CDB178-DD2F-47E9-904D-1DE327CB2D6C" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>7027FD70-475E-FDDA-3AF4-003B2B825FED</referedAttribute>
+<referedAttribute>69F9531A-7957-FC6E-EA6B-333519BB548D</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="24578EDB-5741-FD20-30BC-33E4ACC3547D" name="{entity} PK">
+<identifier id="D21E4170-004A-DD62-98AC-6D1479E86096" name="{entity} PK">
 <createdBy>Siva</createdBy>
-<createdTime>2015-04-15 13:13:23 UTC</createdTime>
+<createdTime>2015-04-22 18:12:31 UTC</createdTime>
 <ownerDesignName>Final_Project_Conceptual</ownerDesignName>
 <engineerTo>
 <item key="65CDB178-DD2F-47E9-904D-1DE327CB2D6C" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>B69E0A99-0A58-68F0-6C01-405754C389FE</attributeRef>
+<attributeRef>ED000950-402B-CA0B-A413-5B3FD90D5EDF</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="78E5BB8C-BC9E-52F9-E491-3095B823FE5C" name="NL_Lab">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-22 18:26:15 UTC</createdTime>
+<generatorID>324E7773-5993-F068-0E4D-AB145C5E7CB6</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="lab_id" id="EA6A9AB5-1751-FA41-5864-7CD29DE59A0F">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-22 18:26:15 UTC</createdTime>
+<generatorID>1723715A-9549-8701-712D-8DF0EFF8067D</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="21242557-6473-459B-BAB4-C6BC487C4FC9" name="NL_Lab_PK">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-22 18:26:15 UTC</createdTime>
+<generatorID>750AE10D-B6F4-DF8E-8ABB-1F2FD6191BD3</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA6A9AB5-1751-FA41-5864-7CD29DE59A0F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

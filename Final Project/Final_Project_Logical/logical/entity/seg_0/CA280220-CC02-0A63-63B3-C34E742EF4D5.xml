@@ -118,6 +118,20 @@
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 </Attribute>
+<Attribute name="user_id" id="68229CA1-2E82-0AA8-F3D7-47C791D5953A">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-22 18:15:00 UTC</createdTime>
+<generatorID>1B1E4A17-D0A9-F177-832C-77E6B2879DF7</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<engineerTo>
+<item key="981CB502-0EF9-4365-4FFA-07B56ACB6D1B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>60BC2542-1B88-9ED4-C830-3D3D1D92E209</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="78E68199-FFF7-2C70-4B99-DC8E492AD0F3" name="{entity} PK">

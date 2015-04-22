@@ -1,3 +1,54 @@
+DROP SEQUENCE NL_Division_seq ; 
+create sequence NL_Division_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER NL_Division_PK_trig 
+; 
+
+create or replace trigger NL_Division_PK_trig 
+before insert on NL_Division
+for each row 
+begin 
+select NL_Division_seq.nextval into :new.division_id from dual; 
+end; 
+/
+
+DROP SEQUENCE NL_Employees_seq ; 
+create sequence NL_Employees_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER NL_Employees_PK_trig 
+; 
+
+create or replace trigger NL_Employees_PK_trig 
+before insert on NL_Employees
+for each row 
+begin 
+select NL_Employees_seq.nextval into :new.user_id from dual; 
+end; 
+/
+
+DROP SEQUENCE NL_Lab_seq ; 
+create sequence NL_Lab_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER NL_Lab_PK_trig 
+; 
+
+create or replace trigger NL_Lab_PK_trig 
+before insert on NL_Lab
+for each row 
+begin 
+select NL_Lab_seq.nextval into :new.lab_id from dual; 
+end; 
+/
+
 DROP SEQUENCE NL_Member_seq ; 
 create sequence NL_Member_seq 
 start with 100 
@@ -15,20 +66,20 @@ select NL_Member_seq.nextval into :new.member_id from dual;
 end; 
 /
 
-DROP SEQUENCE NL_User_seq ; 
-create sequence NL_User_seq 
+DROP SEQUENCE NL_e2m_seq ; 
+create sequence NL_e2m_seq 
 start with 100 
 increment by 1 
 nomaxvalue 
 ;
-DROP TRIGGER NL_User_PK_trig 
+DROP TRIGGER NL_e2m_PK_trig 
 ; 
 
-create or replace trigger NL_User_PK_trig 
-before insert on NL_User
+create or replace trigger NL_e2m_PK_trig 
+before insert on NL_e2m
 for each row 
 begin 
-select NL_User_seq.nextval into :new.user_id from dual; 
+select NL_e2m_seq.nextval into :new.user_mem from dual; 
 end; 
 /
 
@@ -49,30 +100,19 @@ select NL_m2m_seq.nextval into :new.mem_mem from dual;
 end; 
 /
 
-DROP SEQUENCE NL_u2m_seq ; 
-create sequence NL_u2m_seq 
-start with 100 
-increment by 1 
-nomaxvalue 
-;
-DROP TRIGGER NL_u2m_PK_trig 
-; 
-
-create or replace trigger NL_u2m_PK_trig 
-before insert on NL_u2m
-for each row 
-begin 
-select NL_u2m_seq.nextval into :new.user_mem from dual; 
-end; 
-/
-
-DROP INDEX NL_Member_member_id_FK_0 ;
-CREATE INDEX NL_Member_member_id_FK_0 ON NL_Document(NL_Member_member_id) ;
+DROP INDEX NL_Lab_lab_id_FK_0 ;
+CREATE INDEX NL_Lab_lab_id_FK_0 ON NL_Division(NL_Lab_lab_id) ;
 DROP INDEX NL_Member_member_id_FK_1 ;
-CREATE INDEX NL_Member_member_id_FK_1 ON NL_m2m(NL_Member_member_id) ;
-DROP INDEX NL_Member_member_id1_FK_2 ;
-CREATE INDEX NL_Member_member_id1_FK_2 ON NL_m2m(NL_Member_member_id1) ;
-DROP INDEX NL_Member_member_id_FK_3 ;
-CREATE INDEX NL_Member_member_id_FK_3 ON NL_u2m(NL_Member_member_id) ;
-DROP INDEX NL_User_user_id_FK_4 ;
-CREATE INDEX NL_User_user_id_FK_4 ON NL_u2m(NL_User_user_id) ;
+CREATE INDEX NL_Member_member_id_FK_1 ON NL_Document(NL_Member_member_id) ;
+DROP INDEX NL_Member_member_id_FK_2 ;
+CREATE INDEX NL_Member_member_id_FK_2 ON NL_Employees(NL_Member_member_id) ;
+DROP INDEX NL_Employees_user_id_FK_3 ;
+CREATE INDEX NL_Employees_user_id_FK_3 ON NL_Member(NL_Employees_user_id) ;
+DROP INDEX NL_Employees_user_id_FK_4 ;
+CREATE INDEX NL_Employees_user_id_FK_4 ON NL_e2m(NL_Employees_user_id) ;
+DROP INDEX NL_Member_member_id_FK_5 ;
+CREATE INDEX NL_Member_member_id_FK_5 ON NL_e2m(NL_Member_member_id) ;
+DROP INDEX NL_Member_member_id_FK_6 ;
+CREATE INDEX NL_Member_member_id_FK_6 ON NL_m2m(NL_Member_member_id) ;
+DROP INDEX NL_Member_member_id1_FK_7 ;
+CREATE INDEX NL_Member_member_id1_FK_7 ON NL_m2m(NL_Member_member_id1) ;

@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="324E7773-5993-F068-0E4D-AB145C5E7CB6" name="NL_Lab">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-22 18:15:27 UTC</createdTime>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<engineerTo>
+<item key="776869C8-760D-35C0-5957-41C117750FAD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="lab_id" id="1723715A-9549-8701-712D-8DF0EFF8067D">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-22 18:15:27 UTC</createdTime>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<importedID>69F9531A-7957-FC6E-EA6B-333519BB548D</importedID>
+<engineerTo>
+<item key="776869C8-760D-35C0-5957-41C117750FAD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="750AE10D-B6F4-DF8E-8ABB-1F2FD6191BD3" name="{entity} PK">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-22 18:15:27 UTC</createdTime>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<engineerTo>
+<item key="776869C8-760D-35C0-5957-41C117750FAD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1723715A-9549-8701-712D-8DF0EFF8067D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

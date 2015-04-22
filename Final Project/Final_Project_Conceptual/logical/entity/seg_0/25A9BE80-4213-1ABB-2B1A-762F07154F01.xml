@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F05DFA5D-4E50-9A34-E9CC-33D203DF7FF5" name="NL_ARL_Provided_Employees">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="25A9BE80-4213-1ABB-2B1A-762F07154F01" name="NL_ARL_Provided_Lab">
 <createdBy>Siva</createdBy>
-<createdTime>2015-04-15 13:12:07 UTC</createdTime>
+<createdTime>2015-04-22 18:11:39 UTC</createdTime>
 <ownerDesignName>Final_Project_Conceptual</ownerDesignName>
 <engineerTo>
 <item key="65CDB178-DD2F-47E9-904D-1DE327CB2D6C" value="true"/>
@@ -15,43 +15,29 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="user_id" id="7027FD70-475E-FDDA-3AF4-003B2B825FED">
+<Attribute name="lab_id" id="69F9531A-7957-FC6E-EA6B-333519BB548D">
 <createdBy>Siva</createdBy>
-<createdTime>2015-04-15 13:12:20 UTC</createdTime>
+<createdTime>2015-04-22 18:11:54 UTC</createdTime>
 <ownerDesignName>Final_Project_Conceptual</ownerDesignName>
 <engineerTo>
 <item key="65CDB178-DD2F-47E9-904D-1DE327CB2D6C" value="true"/>
 </engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-</Attribute>
-<Attribute name="member_id" id="2E98F380-4FFB-91DE-CE0A-FEB3CA0D758B">
-<createdBy>Siva</createdBy>
-<createdTime>2015-04-22 18:10:00 UTC</createdTime>
-<generatorID>D57382F0-24EA-C2DC-D0CC-9C4263A1CE8F</generatorID>
-<ownerDesignName>Final_Project_Conceptual</ownerDesignName>
-<engineerTo>
-<item key="65CDB178-DD2F-47E9-904D-1DE327CB2D6C" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>B69E0A99-0A58-68F0-6C01-405754C389FE</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="14FE6057-039C-4519-830D-DC5F0A936E5C" name="{entity} PK">
+<identifier id="3FAAE6D3-722E-176E-5031-925B7DC499A3" name="{entity} PK">
 <createdBy>Siva</createdBy>
-<createdTime>2015-04-15 13:12:28 UTC</createdTime>
+<createdTime>2015-04-22 18:12:02 UTC</createdTime>
 <ownerDesignName>Final_Project_Conceptual</ownerDesignName>
 <engineerTo>
 <item key="65CDB178-DD2F-47E9-904D-1DE327CB2D6C" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>7027FD70-475E-FDDA-3AF4-003B2B825FED</attributeRef>
+<attributeRef>69F9531A-7957-FC6E-EA6B-333519BB548D</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

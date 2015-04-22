@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0D9BD406-4355-EB25-9A80-66747A470CD7" name="NL_e2m">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-22 18:26:15 UTC</createdTime>
+<generatorID>F11C4101-D5C6-EF90-4722-485FAE975D1F</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_mem" id="F0D31E43-19E1-DFE2-04F4-8C83290AAE49">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-22 18:26:15 UTC</createdTime>
+<generatorID>66BEA433-AE47-B4F9-2A6F-7EDD4E5ADE2C</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NL_Employees_user_id" id="2BD6C6C0-F201-4DD9-16A9-BFD4482720A2">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-22 18:26:15 UTC</createdTime>
+<generatorID>9298770D-6CC4-EE2E-EB2F-A03F44CABF5E</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>6C5AE3FC-F534-2CCE-8040-8226265A0BEC</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3C1BD7B1-CE39-C787-D8F3-79A4C808151B" referredColumn="6C5AE3FC-F534-2CCE-8040-8226265A0BEC"/>
+</associations>
+</Column>
+<Column name="NL_Member_member_id" id="A412B390-BFD6-3D2C-59E5-57D7AD1ACE91">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-22 18:26:15 UTC</createdTime>
+<generatorID>94EFDCCA-E390-BC70-DE73-7D84AD4C1501</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>F7C47C6F-6E1D-C091-63B2-A5C2CBD5940A</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9C2947DF-2E43-C43B-C992-0A1FC49F389E" referredColumn="F7C47C6F-6E1D-C091-63B2-A5C2CBD5940A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D46C2BE7-CD16-6CD1-76DB-312ED615E16E" name="NL_e2m_PK">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-22 18:26:15 UTC</createdTime>
+<generatorID>203E1A18-7D2E-B149-1BDD-A7FCFF556BD8</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F0D31E43-19E1-DFE2-04F4-8C83290AAE49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5DA87B07-91D1-AF33-13CC-2FA7E21C7830" name="NL_e2m_NL_Employees_FK">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-22 18:26:15 UTC</createdTime>
+<generatorID>E2715AF0-0574-333B-81F5-1ABAFB46A08B</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2BD6C6C0-F201-4DD9-16A9-BFD4482720A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="64EA76B0-C97C-F054-1398-52F94B73AAC8" name="NL_e2m_NL_Member_FK">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-22 18:26:15 UTC</createdTime>
+<generatorID>36808FE8-21B7-BDE0-3DDF-777BB0E39B36</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A412B390-BFD6-3D2C-59E5-57D7AD1ACE91"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

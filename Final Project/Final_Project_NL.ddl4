@@ -6,19 +6,22 @@ drop view nl_member_notice_list;
 create view nl_user_emp as
 SELECT 
     USER_ID,
-    TYPE
-FROM nl_user where type = 'User' ;
+    TYPE,
+    NL_Member_member_id
+FROM nl_employees where type = 'User' ;
 
 create or replace TRIGGER nl_user_trigger
      INSTEAD OF insert ON nl_user_emp
      FOR EACH ROW
 BEGIN
-    insert into nl_user( 
+    insert into nl_employees( 
     USER_ID,
-    TYPE)
+    TYPE,
+    NL_MEMBER_MEMBER_ID)
      VALUES ( 
     :NEW.USER_ID,
-    'User') ;
+    'User',
+    :NEW.NL_MEMBER_MEMBER_ID) ;
 END;
 /
 
@@ -26,13 +29,13 @@ create view nl_user_admin as
 SELECT 
     USER_ID,
     TYPE
-FROM nl_user where type = 'Administrator' ;
+FROM nl_employees where type = 'Administrator' ;
 
 create or replace TRIGGER nl_user_admin_trigger
      INSTEAD OF insert ON nl_user_admin
      FOR EACH ROW
 BEGIN
-    insert into nl_user( 
+    insert into nl_employees( 
     USER_ID,
     TYPE)
      VALUES ( 
@@ -47,9 +50,8 @@ SELECT
     TYPE,
     STATUS,
     NAME,
-    DESCRIPTION,
-    OWNERSHIP_DIVISION_CODE,
-    STATUS_EFFECTIVE_DATE
+    STATUS_EFFECTIVE_DATE,
+    NL_Employees_user_id
 FROM nl_member where type = 'Employee' ;
 
 create or replace TRIGGER nl_member_emp_trigger
@@ -61,17 +63,15 @@ BEGIN
     TYPE,
     STATUS,
     NAME,
-    DESCRIPTION,
-    OWNERSHIP_DIVISION_CODE,
-    STATUS_EFFECTIVE_DATE)
+    STATUS_EFFECTIVE_DATE,
+    NL_EMPLOYEES_USER_ID)
      VALUES ( 
     :NEW.MEMBER_ID,
     'Employee',
     :NEW.STATUS,
     :NEW.NAME,
-    :NEW.DESCRIPTION,
-    :NEW.OWNERSHIP_DIVISION_CODE,
-    :NEW.STATUS_EFFECTIVE_DATE) ;
+    :NEW.STATUS_EFFECTIVE_DATE,
+    :NEW.NL_EMPLOYEES_USER_ID) ;
 END;
 /
 

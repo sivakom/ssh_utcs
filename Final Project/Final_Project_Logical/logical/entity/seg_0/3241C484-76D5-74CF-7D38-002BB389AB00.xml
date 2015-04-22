@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0F67BCE1-1AB8-45EF-1EBB-4C612414C806" name="NL_Employees">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3241C484-76D5-74CF-7D38-002BB389AB00" name="NL_Division">
 <createdBy>Siva</createdBy>
-<createdTime>2015-04-15 18:00:21 UTC</createdTime>
+<createdTime>2015-04-22 18:15:36 UTC</createdTime>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
 <engineerTo>
 <item key="776869C8-760D-35C0-5957-41C117750FAD" value="true"/>
@@ -15,11 +15,11 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="user_id" id="60BC2542-1B88-9ED4-C830-3D3D1D92E209">
+<Attribute name="division_id" id="BDA564CF-AF0C-F866-0C03-6D45D09423E6">
 <createdBy>Siva</createdBy>
-<createdTime>2015-04-15 18:00:21 UTC</createdTime>
+<createdTime>2015-04-22 18:15:36 UTC</createdTime>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
-<importedID>7027FD70-475E-FDDA-3AF4-003B2B825FED</importedID>
+<importedID>ED000950-402B-CA0B-A413-5B3FD90D5EDF</importedID>
 <engineerTo>
 <item key="776869C8-760D-35C0-5957-41C117750FAD" value="true"/>
 </engineerTo>
@@ -27,45 +27,32 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
-<Attribute name="type" id="25F6FB53-E979-2575-DBF5-AA5C99FEE839">
+<Attribute name="lab_id" id="36CB600D-C27F-F8A0-8651-F0D575F827AA">
 <createdBy>Siva</createdBy>
-<createdTime>2015-04-15 18:00:47 UTC</createdTime>
+<createdTime>2015-04-22 18:16:05 UTC</createdTime>
+<generatorID>2AC66FCE-8AB9-0391-D029-449D8D6D8033</generatorID>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
 <engineerTo>
 <item key="776869C8-760D-35C0-5957-41C117750FAD" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>255</dataTypeSize>
-</Attribute>
-<Attribute name="member_id" id="C72E20BD-0ED0-477D-8D34-2669B28EBE74">
-<createdBy>Siva</createdBy>
-<createdTime>2015-04-22 18:15:05 UTC</createdTime>
-<generatorID>1B1E4A17-D0A9-F177-832C-77E6B2879DF7</generatorID>
-<ownerDesignName>Final_Project_Logical</ownerDesignName>
-<engineerTo>
-<item key="776869C8-760D-35C0-5957-41C117750FAD" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>B0AE21C4-A6DE-B545-0AA8-46F77A339C41</referedAttribute>
+<referedAttribute>1723715A-9549-8701-712D-8DF0EFF8067D</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="A58ECE03-96FE-8E34-0787-CCA7C1B76B16" name="{entity} PK">
+<identifier id="5854BF91-8D4D-6498-57CA-9A1D22974D9D" name="{entity} PK">
 <createdBy>Siva</createdBy>
-<createdTime>2015-04-15 18:00:21 UTC</createdTime>
+<createdTime>2015-04-22 18:15:36 UTC</createdTime>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
 <engineerTo>
 <item key="776869C8-760D-35C0-5957-41C117750FAD" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>60BC2542-1B88-9ED4-C830-3D3D1D92E209</attributeRef>
+<attributeRef>BDA564CF-AF0C-F866-0C03-6D45D09423E6</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
