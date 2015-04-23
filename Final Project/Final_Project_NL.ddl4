@@ -84,7 +84,8 @@ SELECT
     DESCRIPTION,
     OWNERSHIP_DIVISION_CODE,
     EXTERNAL_VIEW_NAME,
-    STATUS_EFFECTIVE_DATE
+    STATUS_EFFECTIVE_DATE,
+    CREATED
 FROM nl_member where type = 'Notice List' ;
 
 create or replace TRIGGER nl_member_notice_list_trigger
