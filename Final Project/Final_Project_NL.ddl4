@@ -88,7 +88,7 @@ SELECT
     CREATED
 FROM nl_member where type = 'Notice List' ;
 
-create or replace TRIGGER nl_member_notice_list_trigger
+create or replace TRIGGER nl_member_list_ins_trigger
      INSTEAD OF insert ON nl_member_notice_list
      FOR EACH ROW
 BEGIN
@@ -112,5 +112,61 @@ BEGIN
     :NEW.EXTERNAL_VIEW_NAME,
     SYSDATE,
     SYSDATE) ;
+END;
+/
+
+create or replace TRIGGER nl_member_list_upd_trigger
+     INSTEAD OF update ON nl_member_notice_list
+     FOR EACH ROW
+BEGIN
+    UPDATE nl_member
+    SET
+        MEMBER_ID = :NEW.MEMBER_ID,
+        TYPE = :NEW.TYPE,
+        STATUS = :NEW.STATUS,
+        NAME = :NEW.NAME,
+        DESCRIPTION = :NEW.DESCRIPTION,
+        OWNERSHIP_DIVISION_CODE = :NEW.OWNERSHIP_DIVISION_CODE,
+        EXTERNAL_VIEW_NAME = :NEW.EXTERNAL_VIEW_NAME,
+        STATUS_EFFECTIVE_DATE = SYSDATE,
+        CREATED = SYSDATE
+    WHERE MEMBER_ID = (:OLD.member_id);
+END;
+/
+
+create or replace TRIGGER nl_m2m_update_trigger
+     AFTER update ON nl_m2m
+     FOR EACH ROW
+DECLARE
+    cycle_count NUMBER;
+BEGIN
+    SELECT COUNT(connect_by_iscycle)
+    INTO cycle_count
+    FROM nl_m2m
+    WHERE connect_by_iscycle = 1
+    CONNECT BY nocycle prior nl_member_member_id = nl_member_member_id1;
+
+    IF cycle_count > 0 THEN
+        RAISE_APPLICATION_ERROR(-20343, 'Update will create a cycle');
+    END IF;
+
+END;
+/
+
+create or replace TRIGGER nl_m2m_insert_trigger
+     AFTER INSERT ON nl_m2m
+DECLARE
+    cycle_count NUMBER;
+BEGIN
+    SELECT COUNT(connect_by_iscycle)
+    INTO cycle_count
+    FROM nl_m2m
+    WHERE connect_by_iscycle = 1
+    CONNECT BY nocycle prior nl_member_member_id = nl_member_member_id1;
+
+    IF cycle_count > 0 THEN
+        RAISE_APPLICATION_ERROR(-20343, 'Update will create a cycle');
+    END IF;
+
 END;
 /
