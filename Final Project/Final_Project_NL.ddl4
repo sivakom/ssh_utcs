@@ -139,6 +139,7 @@ create or replace TRIGGER nl_m2m_update_trigger
 DECLARE
     cycle_count NUMBER;
     inactive_lists_count NUMBER;
+    ownership_employee_count NUMBER;
 BEGIN
     SELECT COUNT(connect_by_iscycle)
     INTO cycle_count
@@ -152,12 +153,22 @@ BEGIN
     ON nl_m2m.nl_member_member_id1 = nl_member.member_id
     WHERE type = 'Notice List' AND status = 'Inactive';
 
+    SELECT COUNT(*)
+    INTO ownership_employee_count
+    FROM nl_m2m JOIN nl_member
+    ON nl_m2m.nl_member_member_id = nl_member.member_id
+    WHERE type = 'Employee';
+
     IF cycle_count > 0 THEN
         RAISE_APPLICATION_ERROR(-20343, 'Update will create a cycle');
     END IF;
 
     IF inactive_lists_count > 0 THEN
         RAISE_APPLICATION_ERROR(-20343, 'Notice Lists cannot contain inactive notice lists.');
+    END IF;
+
+    IF ownership_employee_count > 0 THEN
+        RAISE_APPLICATION_ERROR(-20343, 'Employees cannot contain members.');
     END IF;
 END;
 /
@@ -167,6 +178,7 @@ create or replace TRIGGER nl_m2m_insert_trigger
 DECLARE
     cycle_count NUMBER;
     inactive_lists_count NUMBER;
+    ownership_employee_count NUMBER;
 BEGIN
     SELECT COUNT(connect_by_iscycle)
     INTO cycle_count
@@ -180,12 +192,22 @@ BEGIN
     ON nl_m2m.nl_member_member_id1 = nl_member.member_id
     WHERE type = 'Notice List' AND status = 'Inactive';
 
+    SELECT COUNT(*)
+    INTO ownership_employee_count
+    FROM nl_m2m JOIN nl_member
+    ON nl_m2m.nl_member_member_id = nl_member.member_id
+    WHERE type = 'Employee';
+
     IF cycle_count > 0 THEN
         RAISE_APPLICATION_ERROR(-20343, 'Update will create a cycle');
     END IF;
 
     IF inactive_lists_count > 0 THEN
         RAISE_APPLICATION_ERROR(-20343, 'Notice Lists cannot contain inactive notice lists.');
+    END IF;
+
+    IF ownership_employee_count > 0 THEN
+        RAISE_APPLICATION_ERROR(-20343, 'Employees cannot contain members.');
     END IF;
 END;
 /
