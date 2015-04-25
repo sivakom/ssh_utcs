@@ -3,9 +3,6 @@
 <createdBy>Siva</createdBy>
 <createdTime>2015-04-22 18:15:27 UTC</createdTime>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
-<engineerTo>
-<item key="776869C8-760D-35C0-5957-41C117750FAD" value="true"/>
-</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -20,12 +17,19 @@
 <createdTime>2015-04-22 18:15:27 UTC</createdTime>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
 <importedID>69F9531A-7957-FC6E-EA6B-333519BB548D</importedID>
-<engineerTo>
-<item key="776869C8-760D-35C0-5957-41C117750FAD" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="name" id="59D9CF22-1922-1DD2-A799-DEF1F4DA590F">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-25 17:36:49 UTC</createdTime>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -33,9 +37,6 @@
 <createdBy>Siva</createdBy>
 <createdTime>2015-04-22 18:15:27 UTC</createdTime>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
-<engineerTo>
-<item key="776869C8-760D-35C0-5957-41C117750FAD" value="true"/>
-</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>1723715A-9549-8701-712D-8DF0EFF8067D</attributeRef>

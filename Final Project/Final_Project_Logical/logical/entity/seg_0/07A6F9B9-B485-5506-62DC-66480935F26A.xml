@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CA280220-CC02-0A63-63B3-C34E742EF4D5" name="NL_Member">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="07A6F9B9-B485-5506-62DC-66480935F26A" name="NL_ARL_Employees">
 <createdBy>Siva</createdBy>
-<createdTime>2015-04-15 18:02:38 UTC</createdTime>
+<createdTime>2015-04-25 17:38:14 UTC</createdTime>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -12,105 +12,99 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="member_id" id="B0AE21C4-A6DE-B545-0AA8-46F77A339C41">
+<Attribute name="user_id" id="AE1962DC-50E6-8239-ED40-7A1552C20F8A">
 <createdBy>Siva</createdBy>
-<createdTime>2015-04-15 18:02:38 UTC</createdTime>
+<createdTime>2015-04-25 17:38:14 UTC</createdTime>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
-<importedID>B69E0A99-0A58-68F0-6C01-405754C389FE</importedID>
+<importedID>7027FD70-475E-FDDA-3AF4-003B2B825FED</importedID>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
-<Attribute name="status" id="40938463-AC36-BC88-E6F5-E9A919DE200F">
+<Attribute name="name" id="150610D2-15B5-01BE-F991-884CB527704F">
 <createdBy>Siva</createdBy>
-<createdTime>2015-04-15 18:05:47 UTC</createdTime>
+<createdTime>2015-04-25 17:38:14 UTC</createdTime>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
+<importedID>758D0E3F-222C-81AA-BED1-3C461D62D426</importedID>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>255</dataTypeSize>
 </Attribute>
-<Attribute name="name" id="58A20CC0-9DAF-E75E-8FEC-D4BEA2AB2B17">
+<Attribute name="lab" id="2D07F1AF-2483-D4D8-E7A9-AF60F7ED57DC">
 <createdBy>Siva</createdBy>
-<createdTime>2015-04-15 18:05:55 UTC</createdTime>
+<createdTime>2015-04-25 17:38:14 UTC</createdTime>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
+<importedID>8704F86F-901C-7D78-D6CD-3DCCEDED7D7E</importedID>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>255</dataTypeSize>
 </Attribute>
-<Attribute name="description" id="7AD8BD1D-46CB-5694-1271-5E5E0964823B">
+<Attribute name="division" id="7DE62577-CBB6-E49E-791B-C2B2FBFD6C3B">
 <createdBy>Siva</createdBy>
-<createdTime>2015-04-15 18:06:05 UTC</createdTime>
+<createdTime>2015-04-25 17:38:14 UTC</createdTime>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>4000</dataTypeSize>
-</Attribute>
-<Attribute name="ownership_division_code" id="98926051-BA51-2F91-69BA-401521EDDB48">
-<createdBy>Siva</createdBy>
-<createdTime>2015-04-15 18:06:15 UTC</createdTime>
-<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<importedID>02D0C5BB-C509-F376-E7DB-3FAD670881AA</importedID>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>255</dataTypeSize>
 </Attribute>
-<Attribute name="external_view_name" id="AC191C6F-BD57-E174-EAB8-141604A94FDF">
+<Attribute name="status" id="9CC8DEBF-30D1-A3EC-137E-44ED63BF9D02">
 <createdBy>Siva</createdBy>
-<createdTime>2015-04-15 18:06:24 UTC</createdTime>
+<createdTime>2015-04-25 17:38:14 UTC</createdTime>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
+<importedID>46EDF2E0-C6C8-0164-4D19-BEA424AE0273</importedID>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>255</dataTypeSize>
 </Attribute>
-<Attribute name="status_effective_date" id="1D38DFC3-3811-091F-A3D3-7F7752B38BFF">
+<Attribute name="status_effective_date" id="71CDBEC4-0644-343D-E171-026C6271E001">
 <createdBy>Siva</createdBy>
-<createdTime>2015-04-15 18:06:30 UTC</createdTime>
+<createdTime>2015-04-25 17:38:14 UTC</createdTime>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
+<importedID>5CB8C2B3-951D-76F2-65EF-A0CAE3579A1C</importedID>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 </Attribute>
-<Attribute name="type" id="DC300BFE-8812-80D3-6AE9-6A65C166E900">
+<Attribute name="type" id="B79C7606-06C5-C21A-DFE7-CC974DA35D8C">
 <createdBy>Siva</createdBy>
-<createdTime>2015-04-15 18:02:38 UTC</createdTime>
+<createdTime>2015-04-25 17:38:43 UTC</createdTime>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
-<importedID>35AB81E4-08AF-04B3-F1AB-0A9671CC72BD</importedID>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>255</dataTypeSize>
 </Attribute>
-<Attribute name="user_id" id="2056F5C4-1D24-1A88-ECEE-33B6A32AC8B4">
+<Attribute name="member_id" id="E8598AA2-C590-56FC-3B00-0C290F3E18BC">
 <createdBy>Siva</createdBy>
-<createdTime>2015-04-25 17:39:59 UTC</createdTime>
+<createdTime>2015-04-25 17:40:22 UTC</createdTime>
 <generatorID>BB406DB0-4DBD-F70D-3CC8-A616B8D4DEBF</generatorID>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
-<referedAttribute>AE1962DC-50E6-8239-ED40-7A1552C20F8A</referedAttribute>
+<referedAttribute>B0AE21C4-A6DE-B545-0AA8-46F77A339C41</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="78E68199-FFF7-2C70-4B99-DC8E492AD0F3" name="{entity} PK">
+<identifier id="17431C80-F1CE-F08E-F7EF-3C359402E406" name="{entity} PK">
 <createdBy>Siva</createdBy>
-<createdTime>2015-04-15 18:02:38 UTC</createdTime>
+<createdTime>2015-04-25 17:38:14 UTC</createdTime>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>B0AE21C4-A6DE-B545-0AA8-46F77A339C41</attributeRef>
+<attributeRef>AE1962DC-50E6-8239-ED40-7A1552C20F8A</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

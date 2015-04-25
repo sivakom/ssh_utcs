@@ -3,9 +3,6 @@
 <createdBy>Siva</createdBy>
 <createdTime>2015-04-22 18:15:36 UTC</createdTime>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
-<engineerTo>
-<item key="776869C8-760D-35C0-5957-41C117750FAD" value="true"/>
-</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -20,21 +17,25 @@
 <createdTime>2015-04-22 18:15:36 UTC</createdTime>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
 <importedID>ED000950-402B-CA0B-A413-5B3FD90D5EDF</importedID>
-<engineerTo>
-<item key="776869C8-760D-35C0-5957-41C117750FAD" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="name" id="FFB9D8C2-0114-1F26-C151-62918B641517">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-25 17:37:00 UTC</createdTime>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
 </Attribute>
 <Attribute name="lab_id" id="36CB600D-C27F-F8A0-8651-F0D575F827AA">
 <createdBy>Siva</createdBy>
 <createdTime>2015-04-22 18:16:05 UTC</createdTime>
 <generatorID>2AC66FCE-8AB9-0391-D029-449D8D6D8033</generatorID>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
-<engineerTo>
-<item key="776869C8-760D-35C0-5957-41C117750FAD" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>1723715A-9549-8701-712D-8DF0EFF8067D</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -47,9 +48,6 @@
 <createdBy>Siva</createdBy>
 <createdTime>2015-04-22 18:15:36 UTC</createdTime>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
-<engineerTo>
-<item key="776869C8-760D-35C0-5957-41C117750FAD" value="true"/>
-</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>BDA564CF-AF0C-F866-0C03-6D45D09423E6</attributeRef>

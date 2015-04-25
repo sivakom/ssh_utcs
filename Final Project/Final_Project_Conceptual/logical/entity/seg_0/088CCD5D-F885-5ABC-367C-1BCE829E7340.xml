@@ -26,6 +26,19 @@
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
+<Attribute name="name" id="8421D921-76A1-E5C3-D9D5-44A7018C824A">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-25 17:10:30 UTC</createdTime>
+<ownerDesignName>Final_Project_Conceptual</ownerDesignName>
+<engineerTo>
+<item key="65CDB178-DD2F-47E9-904D-1DE327CB2D6C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+</Attribute>
 <Attribute name="lab_id" id="CE902AA2-7548-DDE9-4B76-F60F39E7469C">
 <createdBy>Siva</createdBy>
 <createdTime>2015-04-22 18:13:19 UTC</createdTime>

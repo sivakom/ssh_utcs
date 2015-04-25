@@ -37,6 +37,8 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
 </Attribute>
 <Attribute name="name" id="0A73ADA3-811D-9A02-3004-1C7B17B2F1F5">
 <createdBy>Siva</createdBy>
@@ -74,6 +76,8 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
 </Attribute>
 <Attribute name="external_view_name" id="21651335-2915-10F6-7D9B-44AF9C6F88F7">
 <createdBy>Siva</createdBy>
@@ -85,6 +89,8 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
 </Attribute>
 <Attribute name="status_effective_date" id="2E536487-1C26-4F6A-12F9-C164D5F3CAD0">
 <createdBy>Siva</createdBy>

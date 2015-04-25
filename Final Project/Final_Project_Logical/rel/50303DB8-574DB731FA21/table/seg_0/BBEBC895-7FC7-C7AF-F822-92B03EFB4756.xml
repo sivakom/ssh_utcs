@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BBEBC895-7FC7-C7AF-F822-92B03EFB4756" name="NL_Lab">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-25 17:45:04 UTC</createdTime>
+<generatorID>324E7773-5993-F068-0E4D-AB145C5E7CB6</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="lab_id" id="0F53D8F0-C979-3BE9-9F3B-0E03C297DB60">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-25 17:45:04 UTC</createdTime>
+<generatorID>1723715A-9549-8701-712D-8DF0EFF8067D</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="0685EAAB-44E1-EFC6-F216-CB696F61900D">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-25 17:45:04 UTC</createdTime>
+<generatorID>59D9CF22-1922-1DD2-A799-DEF1F4DA590F</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="79BCBC8F-5CA1-B3A0-B787-8866FD64CFBC" name="NL_Lab_PK">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-25 17:45:04 UTC</createdTime>
+<generatorID>750AE10D-B6F4-DF8E-8ABB-1F2FD6191BD3</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F53D8F0-C979-3BE9-9F3B-0E03C297DB60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

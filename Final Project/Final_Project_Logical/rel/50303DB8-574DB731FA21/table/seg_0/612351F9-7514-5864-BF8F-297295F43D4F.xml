@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="612351F9-7514-5864-BF8F-297295F43D4F" name="NL_ARL_Employees">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-25 17:45:04 UTC</createdTime>
+<generatorID>07A6F9B9-B485-5506-62DC-66480935F26A</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" id="4E90538F-18BF-AF1B-9415-1538EB49ED8A">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-25 17:45:04 UTC</createdTime>
+<generatorID>AE1962DC-50E6-8239-ED40-7A1552C20F8A</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="D5CBD4BD-0243-3002-A4CB-C6148BC5B0B5">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-25 17:45:04 UTC</createdTime>
+<generatorID>150610D2-15B5-01BE-F991-884CB527704F</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lab" id="1886CDC2-7619-A8DA-6DC4-F8431ACCC637">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-25 17:45:04 UTC</createdTime>
+<generatorID>2D07F1AF-2483-D4D8-E7A9-AF60F7ED57DC</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="division" id="D0AC1712-6922-BD73-138D-5174DCD8EAC3">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-25 17:45:04 UTC</createdTime>
+<generatorID>7DE62577-CBB6-E49E-791B-C2B2FBFD6C3B</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="51087663-22ED-D765-23DD-BB03D824446F">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-25 17:45:04 UTC</createdTime>
+<generatorID>9CC8DEBF-30D1-A3EC-137E-44ED63BF9D02</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_effective_date" id="2E543ADB-5034-AD3E-583A-15A7D583E7B1">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-25 17:45:04 UTC</createdTime>
+<generatorID>71CDBEC4-0644-343D-E171-026C6271E001</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="856F4779-8045-99B1-7D4A-A59590D65B49">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-25 17:45:04 UTC</createdTime>
+<generatorID>B79C7606-06C5-C21A-DFE7-CC974DA35D8C</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NL_Member_member_id" id="E630B12D-C085-72BB-F9A6-C17D1A0409D4">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-25 17:45:04 UTC</createdTime>
+<generatorID>E8598AA2-C590-56FC-3B00-0C290F3E18BC</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>625B4FC5-1EEE-B33E-E2FE-FEE9A87D4E0D</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="62740FAA-90A2-CF3A-9E2D-EFA41C0E5C86" referredColumn="625B4FC5-1EEE-B33E-E2FE-FEE9A87D4E0D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4A6E22C6-0DF7-5B46-8CCB-F6F490D3BDA8" name="NL_ARL_Employees_PK">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-25 17:45:04 UTC</createdTime>
+<generatorID>17431C80-F1CE-F08E-F7EF-3C359402E406</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E90538F-18BF-AF1B-9415-1538EB49ED8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7658D4CC-D57D-9C66-7043-D3CC7CD9D51B" name="NL_ARL_Employees__IDX">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-25 17:45:05 UTC</createdTime>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>BB406DB0-4DBD-F70D-3CC8-A616B8D4DEBF</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="E630B12D-C085-72BB-F9A6-C17D1A0409D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="01B310FB-9F2A-05F6-595C-35390FDEB99D" name="NL_ARL_Employees_NL_Member_FK">
+<createdBy>Siva</createdBy>
+<createdTime>2015-04-25 17:45:05 UTC</createdTime>
+<generatorID>BB406DB0-4DBD-F70D-3CC8-A616B8D4DEBF</generatorID>
+<ownerDesignName>Final_Project_Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E630B12D-C085-72BB-F9A6-C17D1A0409D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

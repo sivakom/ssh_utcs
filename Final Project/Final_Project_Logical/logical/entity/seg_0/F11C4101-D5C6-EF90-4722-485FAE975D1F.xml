@@ -3,9 +3,6 @@
 <createdBy>Siva</createdBy>
 <createdTime>2015-04-15 18:33:38 UTC</createdTime>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
-<engineerTo>
-<item key="981CB502-0EF9-4365-4FFA-07B56ACB6D1B" value="true"/>
-</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -15,27 +12,21 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="user_mem" id="66BEA433-AE47-B4F9-2A6F-7EDD4E5ADE2C">
+<Attribute name="user_mem_id" id="66BEA433-AE47-B4F9-2A6F-7EDD4E5ADE2C">
 <createdBy>Siva</createdBy>
 <createdTime>2015-04-15 18:35:24 UTC</createdTime>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
-<engineerTo>
-<item key="981CB502-0EF9-4365-4FFA-07B56ACB6D1B" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
-<Attribute name="user_id" id="9298770D-6CC4-EE2E-EB2F-A03F44CABF5E">
+<Attribute name="user_id" id="150B2806-FE28-BE7D-D5E5-724A6DD51D51">
 <createdBy>Siva</createdBy>
-<createdTime>2015-04-15 18:34:36 UTC</createdTime>
-<generatorID>E2715AF0-0574-333B-81F5-1ABAFB46A08B</generatorID>
+<createdTime>2015-04-25 17:39:44 UTC</createdTime>
+<generatorID>9D8B7B8C-F41A-3F56-555A-B8B482F70A91</generatorID>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
-<engineerTo>
-<item key="981CB502-0EF9-4365-4FFA-07B56ACB6D1B" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<referedAttribute>60BC2542-1B88-9ED4-C830-3D3D1D92E209</referedAttribute>
+<referedAttribute>AE1962DC-50E6-8239-ED40-7A1552C20F8A</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -45,9 +36,6 @@
 <createdTime>2015-04-15 18:34:46 UTC</createdTime>
 <generatorID>36808FE8-21B7-BDE0-3DDF-777BB0E39B36</generatorID>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
-<engineerTo>
-<item key="981CB502-0EF9-4365-4FFA-07B56ACB6D1B" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>B0AE21C4-A6DE-B545-0AA8-46F77A339C41</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -60,9 +48,6 @@
 <createdBy>Siva</createdBy>
 <createdTime>2015-04-15 18:36:00 UTC</createdTime>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
-<engineerTo>
-<item key="981CB502-0EF9-4365-4FFA-07B56ACB6D1B" value="true"/>
-</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>66BEA433-AE47-B4F9-2A6F-7EDD4E5ADE2C</attributeRef>

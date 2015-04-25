@@ -3,9 +3,6 @@
 <createdBy>Siva</createdBy>
 <createdTime>2015-04-15 18:36:53 UTC</createdTime>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
-<engineerTo>
-<item key="981CB502-0EF9-4365-4FFA-07B56ACB6D1B" value="true"/>
-</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -15,13 +12,10 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="mem_mem" id="125C43DD-0073-3A45-1F29-A29C1AF71FB2">
+<Attribute name="mem_mem_id" id="125C43DD-0073-3A45-1F29-A29C1AF71FB2">
 <createdBy>Siva</createdBy>
 <createdTime>2015-04-15 18:37:01 UTC</createdTime>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
-<engineerTo>
-<item key="981CB502-0EF9-4365-4FFA-07B56ACB6D1B" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -31,9 +25,6 @@
 <createdTime>2015-04-15 18:37:24 UTC</createdTime>
 <generatorID>18136BDD-81D0-3B16-E1F1-E6E53284DF96</generatorID>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
-<engineerTo>
-<item key="981CB502-0EF9-4365-4FFA-07B56ACB6D1B" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>B0AE21C4-A6DE-B545-0AA8-46F77A339C41</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -45,9 +36,6 @@
 <createdTime>2015-04-15 18:37:43 UTC</createdTime>
 <generatorID>4D5C2F6B-23BC-73FF-DA8B-255EE8954151</generatorID>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
-<engineerTo>
-<item key="981CB502-0EF9-4365-4FFA-07B56ACB6D1B" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>B0AE21C4-A6DE-B545-0AA8-46F77A339C41</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -60,9 +48,6 @@
 <createdBy>Siva</createdBy>
 <createdTime>2015-04-15 18:37:07 UTC</createdTime>
 <ownerDesignName>Final_Project_Logical</ownerDesignName>
-<engineerTo>
-<item key="981CB502-0EF9-4365-4FFA-07B56ACB6D1B" value="true"/>
-</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>125C43DD-0073-3A45-1F29-A29C1AF71FB2</attributeRef>
