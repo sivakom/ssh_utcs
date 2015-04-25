@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Final_Project_Conceptual" id="257B2F8E-9F3F-9B9F-6641-4BD8D979095C" version="3.5">
-<createdBy>Siva</createdBy>
-<createdTime>2015-04-15 13:11:20 UTC</createdTime>
-<ownerDesignName>Final_Project_Conceptual</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>257B2F8E-9F3F-9B9F-6641-4BD8D979095C</designId>
-</OSDM_Design>
