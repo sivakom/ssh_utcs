@@ -5,6 +5,8 @@ create view nl_member_emp as
 SELECT
     MEMBER_ID,
     TYPE,
+    NAME,
+    STATUS,
     NL_ARL_Employees_user_id,
     CREATED
 FROM nl_member where type = 'Employee' ;
@@ -16,11 +18,15 @@ BEGIN
     insert into nl_member( 
     MEMBER_ID,
     TYPE,
+    NAME,
+    STATUS,
     NL_ARL_EMPLOYEES_USER_ID,
     CREATED)
      VALUES ( 
     :NEW.MEMBER_ID,
     'Employee',
+    :NEW.NAME,
+    :NEW.STATUS,
     :NEW.NL_ARL_EMPLOYEES_USER_ID,
     SYSDATE) ;
 END;

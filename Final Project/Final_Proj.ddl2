@@ -32,6 +32,23 @@ select NL_Division_seq.nextval into :new.division_id from dual;
 end; 
 /
 
+DROP SEQUENCE NL_Document_seq ; 
+create sequence NL_Document_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER NL_Document_PK_trig 
+; 
+
+create or replace trigger NL_Document_PK_trig 
+before insert on NL_Document
+for each row 
+begin 
+select NL_document_seq.nextval into :new.document_id from dual; 
+end; 
+/
+
 DROP SEQUENCE NL_Lab_seq ; 
 create sequence NL_Lab_seq 
 start with 100 
